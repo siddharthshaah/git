@@ -1,0 +1,43 @@
+#1. unmodified -> modified = git restore filename
+                  (edit)
+	
+#2. unmodified -> modified -> staged = git restore --staged filename
+                   (edit)              (or)
+	                                     git rm --cached filename
+
+#3. untracked -> staged = git restore --staged filename
+
+git repository directory structure:
+-----------------------------------
+The .git directory holds the information about the repository and objects that are commited into the repository. when we issue git init inside the empty directory, the git creates the .git directory initializing the empty repository with the below directory structure inside it.
+
+.git (directory)
+|-hooks
+|-info
+|-objects
+|-logs
+|-refs
+--------
+|-config
+|-index
+|-HEAD
+
+
+
+
+
+
+tree 04a631af01f6520287b5e55dbce125de05ee2af4
+author sriman <tech.sriman@gmail.com> 1664542572 -0400
+committer sriman <tech.sriman@gmail.com> 1664542572 -0400
+
+added tracks
+b9b8d839604707d36c594d31fca08be14f059f
+
+
+
+
+
+
+
+

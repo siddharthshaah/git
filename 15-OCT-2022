@@ -1,0 +1,13 @@
+git stash
+when we modified few files in the current branch which are not yet commited, and trying to switch to an different branch, then the local changes we made in the current branch will be overwritten and git doesnt allows us to switch.
+So we need to temporarily save the changes of the current branch using stash
+git stash
+now it provides an stash commit hash 
+
+once we have finished the work in another branch when we switch back to the current branch we can reapply the changes into the branch using
+git stash apply
+
+git stash list = shows all the stashes that are currently exists in the repository
+
+
+

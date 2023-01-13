@@ -1,0 +1,8 @@
+repository layout
+when we create an repository in svn the repository will be created with standard layout/directories within it
+1. trunk = working copy of the code will be placed in trunk
+2. branches = every release the code will be placed in the branch
+3. tags = release tags are maintained in tags
+
+
+https://DESKTOP-1QI4S5N/svn/gooddealsrepo/

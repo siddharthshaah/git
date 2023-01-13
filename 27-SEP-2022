@@ -1,0 +1,89 @@
+GIT
+GIT "global information tracker" is an distributed version control system (vcs). Many of the existing vcs are central server model, for performing any operations the clients has to be online and should be connected to the central vcs for example to get the revision history, see logs or to commit or rollback the changes the client must be connected to the server over the network
+
+whereas GIT is an distributed version control system, which is nothing but each client will clone the entire repository from the GIT server which acts as an standalone repository of its own. A full copy of the repository exists on each client machine so that all the operations can be carried local to the client itself without the need of online.
+	
+A commit history or revision log, commit or rollback operations takes place local to the client repository itself. upon completion of all the commits, the client aggregate and push these changes to the central server repository inorder to collaborate with other developers
+
+
+As learnt previously every VCS is an distributed software, it has both server and client, so GIT also has client/server components. There are various different providers/vendors manufactures and distributes the GIT Server and client software either commercial or opensource, few of the vendors are
+1. GitHub
+2. BitBucket
+3. GitLab
+4. GitGogs
+
+These vendors offers several choices of hosting that may vary from vendor to vendor
+1. most of the vendors supports SAAS based offering, where these providers hosts the servers on their cloud and permits us to create repositories and manage source code based on their licensing model
+2. few vendors supports hosting the GIT servers of their own onto our cloud account of a cloud provider
+3. self-hosted (on-premise), allows us to download git server software and host and manage on our organization network
+depends on the requirement we can go with any of the options in using the GIT server
+
+
+GIT Client software:
+1. GitBash = powerful command-line utility to manage the repositories from GIT Server and most of the people users it
+2. GIT Gui = having very limited options and not so user-friendly
+3. IDE = every popular IDE like eclipse, vscode editor, intellij etc has integration with GIT 
+------------------------------------------------------------------------------------------------------------------------
+Working with repository
+Install the GitBash on your machine to start working with git repositories.
+	
+#1. how to create an empty repository on our local machine?
+create an project directory into which you want to initialize the repository
+mkdir projectdir
+cd projectdir
+git init
+
+The git init command initializes an empty repository into the current directory where it has been executed by creating an default branch called "master".
+	
+#2. git file status lifecycle
+There are 4 different statuses in which a file can exists in git repository
+1. untracked = a newly created file within the repository directory will be by default in untracked state
+2. unmodified
+3. modified
+4. staged
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

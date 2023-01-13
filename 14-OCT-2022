@@ -1,0 +1,65 @@
+1. How to clone an existing remote repository?
+git clone -b branchName repositoryURL
+
+
+2. How to add an remote origin server to an local repository?
+1. create an remote repository on the git server
+for eg.. https://github.com/techsriman/guaragetools.git
+remote repository should not have any commits
+
+2. create an local repository
+mkdir repodir
+cd repodir
+git init
+touch README.md
+git add .
+git commit -m "comment"
+git branch -M master
+git remote add origin remoteRepositoryURL
+git push -u origin master
+------------------------------------------------------------------------------------------------------------------------
+3. How to see the remote origin server of an local repository?
+git remote show origin
+
+4. How to push the local repository changes into the remote server?
+git push
+
+5. How to get the new commits from remote repository into the local?
+git pull
+
+How to create a branch while working with remote repositories?
+There are 2 ways are there
+1. create remote branch
+2. git pull
+3. git checkout newbranch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

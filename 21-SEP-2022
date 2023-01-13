@@ -1,0 +1,75 @@
+Gen#1 = lock-modify-unlock strategy
+looks like the Gen#1 repositories has addressed most of the problems that we have in developing application in collaborative model without scm repositories
+1. security and authorization are enforces in enabling the access to source code within the repository
+2. developer dont need to keep track of the files he has modified, the scm repository itself will keep track of them so that it would be easy to identify what has been changed and push back to the repository
+3. avoids the developers in overriding the changes of one with the another. when a developer has checkout the file, it will be locked with that developer and would not permit any other developers to commit their code changes without checkout/acquiring lock
+4. versioning in place so that we can keep track of the changes happened on the sourcecode
+5. these repositories helps us in backup and restoration
+
+but these has their own dis-advantages as well
+1. these repositories doesnt support collaborative application developer, developers cannot work in parallel in building the application since a developer has to wait for another developer to complete his changes and commit to work on the same sourcecode file 
+2. many of the times the developers can run into deadlock where each of them checkout a bunch of files and waiting for others to commit their changes to proceed and arrives to a deadlock
+3. if a developer is working on a huge task which involves lot of files to be modified and takes more time in completing will leaves the rest of team blocked and keep them idle to complete the changes
+4. if a developer has checkout bunch of files within the repository and went on vacation or left from the organization then the whole team will be blocked either until the developer returns back or administrator forcefully release the lock making the code changesof the developer lost
+
+to overcome the above problems with lock-modify-unlock strategy based repositories, gen#2 repositories are introduced.
+gen#2 = copy-modify-merge
+gen#2 repositories are build based on the concept of copy-modify-merge strategy where these repositories seems to have solved the problems with gen#1 repositories
+Few of the gen#2 repositories available in the market are
+1. perforce
+2. subversion
+3. pvcs
+etc
+
+let us try to understand how subversion repository works
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

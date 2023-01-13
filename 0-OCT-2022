@@ -1,0 +1,123 @@
+How to rewrite the git history?
+Lets say we did a commit to the repository and made a mistake in the commit log message, how to edit the commit message?
+if you dont have any staged commits in the repository branch, then we can quickly modify the last commit message using
+git commit --amend
+
+Git Ignore files
+-----------------
+
+project (repo)
+|-src
+  |-main
+		|-java
+		|-resources
+|-pom.xml
+|-target (generated) (should not be commited/pushed to sourcecode repository)
+	|-classes
+	|-*.jar
+
+git add .
+	
+always the rule of thumb is never commit/push any files/binaries that are being generated/computed through a build process of a project into the repository.
+For eg.. while working on a maven java project, during the build process the target/ directory and its contents are generated, these files should not be commited or pushed into the repository because
+1. these gets computed each time when we build the project, since these are computed things we dont need versioning and by commiting them into the repository commit history will grow and gets polluted and find it difficult for the developers to identify the actual being modified as part of a commit
+2. by commiting the binaries (like jar, war or ide generated directories like: .metadata, .settings, .classpath, .project) into the repository the diskspace on vcs will be increased
+3. the bandwidth consumption in cloning and pushing the changes to the remote repository will be huge
+4. time required for cloning and pushing the changes into the remote repository will be high
+
+How to avoid these files being commited or pushed into the repository?
+we can ignore specific files, directories based on name or patterns by using .gitignore file being placed in the root directory of the repository
+sportsclub (repo)
+|-.gitignore
+
+into this file add the filenames or directory names or patterns you want git tool to ignore during commit or push. once we changed the file, add and commit the file into the repository so that git client tool ignores these files when we stage, commit or push the files
+
+.gitignore
+-----------
+target/
+*.jar
+*.class
+.metadata/
+.settings/
+.project
+.classpath
+-----------------------------------------------------------------------------------------------------------------------
+git branching
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

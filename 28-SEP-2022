@@ -1,0 +1,149 @@
+What are the lifecycle status in which a File can exists in Git Repository?
+A file can exist in Git repository in one of the four statuses
+1. untracked = an newly created file which is not added to the repository will be in untracked status
+2. modified  = when we edited an existing file of the repository, then it will moved to modified status
+3. unmodified = a commited file will be moved to unmodified status
+4. staged = files that are modified, are made ready for commit are called staged
+
+let us explore the commands to move the files across the lifecycle status in repository.
+	
+1. create a new repository
+create an empty directory
+mkdir projectdir
+cd projectdir
+git init = initializes an empty repository in the directory under where we executed
+
+2. how to see the status of the repository
+git status
+shows status of all the files in the repository like untracked, modified and staged.
+	
+How does the git repository captures the author information who is commiting the files into the repository?
+There are 2 levels at which we can configure the author info to capture the commit history
+1. repository level
+2. global
+
+#1. repository level
+for a specific repository we can configure user & email who is commiting the files using the below commands
+git config user.name username
+git config user.email emailAddress
+
+the information about the repository will be kept under .git/config file
+
+
+#2. global system level
+git config --global user.name username
+git config --global user.email emailAddress
+
+The global configuration is stored in ~/.gitconfig file
+
+How to remove the user.name or user.email that we set globally?
+git config --global --unset-all user.name
+git config --global --unset-all user.email
+
+for repository level dont use --global switch
+	
+	
+#3. 
+git add . = will stage all the untracked and modified files in the repository
+git add filename = to stage only a specific file of the repository
+git add -u = will stage all the modified files only
+
+#4. how to see all the commits made into the repository
+git log = shows all the commits to the repository in a chronological ascending order
+
+#5 
+How to rollback the changes in a modified file which is not yet staged?
+(or)
+How to discard the changes made in a repo file?	
+(unmodified)-> edited -> modified -> goback to unmodified
+git restore pathtoFile
+for eg.. git restore lunch-menu.txt
+will rollback all the changes made inside the file into the repository version
+
+#6.
+repositoryFile -> edited -> modified -> staged
+(unmodified)
+git restore --staged filename
+with the above command the file will be unstaged, but the modifications we made still exists in the File
+
+#7. 
+untracked -> staged = moveback to untracked state
+There are mutliple commands using which we can move an staged file back to untracked status
+1. git restore --staged filename.txt
+2. git rm --cached filename = we are asking git to remove the file from cached (staged status), which is unstage it
+            |
+				 staged
+
+
+#8.
+How to remove a commited change into repository
+git reset --hard commithash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

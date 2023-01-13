@@ -1,0 +1,75 @@
+git merge
+In case of an git merge, an merge commit will be written onto the branch merging the another branch into it. so if we look at the git log, we see swimlines drawn onto the branch merging other branches
+
+drawbacks:-
+	1. when we do an git merge, the log history will not be clear it doesnt indicate which branch and files are merged through git merge
+	2. when more number of merges happens into the main branch, too many number of merge commits will be added into the main due to which the git log becomes quite messy
+	
+advantages:-
+	1. easy to use and understand
+	2. The commits in the source branch (for eg.. feature branch) are separated from other branch, so we can merge the feature into another branch if required
+	3. preserves your commit history and keeps the history graph semantically correct
+	
+	
+git rebase
+In case of rebase, the commits of the another branch are rewritten or added into the branch into which we are rebasing. so that always the history of the branch will be linear
+
+drawbacks:-
+	1. rebase is always slow, because commit by commit comparision is drawn to determine the path at which the commit should be included
+	2. if there are any conflicting changes across the branches, each commit should be resolved manually takes lot of time
+	3. it is not adviced to rewrite the commit history when we are working in a team!
+		
+advantages:-
+	1. The git history is linear and readable
+	2. easy to track a bug or when a feature is introduced
+-----------------------------------------------------------------------------------------------------------------------
+Working with Remote repository
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

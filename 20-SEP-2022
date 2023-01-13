@@ -1,0 +1,74 @@
+The sourcecode management repositories should provide the below features
+1. sourcecode management repositories should be distributed systems that allows the members to copy the code into their local systems over the network
+2. should enforce security in accessing the sourcecode from the repository. strict authentication mechanism should be there in place granting the access to the project sourcecode based on groups/users
+3. help us enforcing file/folder level permissions for performing operations like read/write/delete etc for users/groups
+4. monitoring who is accessing the sourcecode and what operations are performed on the repository should be tracked and audited
+5. should strongly support versioning to keep track of all the changes that are made on the sourcecode, so that in event of override we can recover the previous version of the code
+6. periodic backups and restore incase of crash
+7. should help us in avoiding the overrides of the files/folders across the developers
+8. sourcecode repository should help us in tracking which files are modified and provide tools to merge the code changes done by multiple developers on the same files
+
+
+There are lot of scm tools build by various different vendors and has distributed to the world as opensource/commercial distributions. we can classify them into #3 generations
+
+#1. gen1 = lock-modify-unlock (strategy)
+The gen#1 repositories works based on the principle of "lock-modify-unlock" strategy. there are lot of scm products built based on this strategy
+1. wincvs
+2. vss
+3. rational clearcase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

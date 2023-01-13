@@ -1,0 +1,43 @@
+source code management repositories
+-----------------------------------
+developers while developing the project will develope the source code using an programming language or a tool. A sourcecode is a file containing instructions or data that will used for performing an operation. depends on the technology used by the developer, the type of source code vary
+1. java program (.java)
+2. ansible playbook (.yml)
+3. vagrant (Vagrantfile)
+4. shellscript (.sh)
+5. terraform (.tf, tfvars)
+6. kubernetes spec (.yml)	
+etc
+
+As the project is very huge, they are lot of different types of sourcecode produced by the developers in building & contributing to the project. Multiple developers in the team works in parallel and develops the sourcecode of the project.
+	
+How can multiple developers can collaborate in building/developing the project?
+each developer in the team produce sourcecode, all the code produced by the developers of the team should be merged to produce the final copy of the code, so that it be deployed and released for production, How to integrate the code produced by the various developers in the team to build the final copy of the code, so we need to use source code management repositories
+
+Without source code management repositories how to do the collaborative development?
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

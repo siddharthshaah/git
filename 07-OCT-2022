@@ -1,0 +1,16 @@
+How to work with branches in git repository?
+by default when we create an repository using git init, an empty repository is created with a default branch as "master". 
+we can create a new branch from the existing branch using
+
+1. git branch branchname = a new branch from the current branch we are in
+or
+git checkout -b branchname
+
+
+
+2. we can see all the branches within the repository using 
+git branch
+this returns all the branches in the repository by showing "*" indicating the current branch you are in
+
+
+	

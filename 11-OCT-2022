@@ -1,0 +1,10 @@
+How many ways we can merge a branch into another branch?
+There are 2 ways are there
+1. git merge = git merge to merge the commits of one branch into another, it creates an merge commit for adding all the commits of another branch into the current branch we are in
+so a swim line will be drawn showing the branch that has been merged in GUI mode.
+The problem with merge commit is by looking at merge commit we cannot identify these changes are brought in through which commits, which means git repository history is not clear
+
+2. git rebase
+The other way of merging the changes of a branch into another is using git rebase. git rebase re-writes the commits of one branch into another.
+	
+	
